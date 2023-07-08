@@ -1,5 +1,5 @@
-const data = require('../models').data_model
 
+const data = require('../models').data_model;
 
 module.exports = {
   listData: async (req, res) => {

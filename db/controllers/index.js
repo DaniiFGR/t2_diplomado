@@ -1,7 +1,5 @@
-const estudianteController = require('./estudianteController')
-const coordinadorController = require('./coordinadorController')
+const dataController = require('./dataController')
 
 module.exports = {
-    estudianteController,
-    coordinadorController,
+    dataController,
 };

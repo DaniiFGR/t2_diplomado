@@ -6,8 +6,7 @@ const logger = require('morgan');
 var cors = require('cors');
 // Importación de rutas
 const indexRouter = require('./routes/index');
-const estudianteRouter = require('./routes/estudianteRoute')
-const coordinadorRouter = require('./routes/coordinadorRoute')
+const dataRouter = require('./routes/dataRoute')
 
 const app = express();
 app.use(cors());
@@ -19,8 +18,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Llamado a rutas
 app.use('/index', indexRouter);
-app.use('/api/estudiante', estudianteRouter);
-app.use('/api/coordinador', coordinadorRouter);
+app.use('/api/datos', dataRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
