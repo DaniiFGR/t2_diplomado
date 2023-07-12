@@ -1,0 +1,11 @@
+{
+  "development": {
+    "username": "moodleuser",
+    "password": "moodle2023",
+    "database": "datos",
+    "host": "ec2-54-174-118-96.compute-1.amazonaws.com",
+    "dialect": "mariadb",
+    "allowPublicKeyRetrieval": true
+  }
+}
+
