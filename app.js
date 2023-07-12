@@ -16,6 +16,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.set("view engine", "ejs");
+app.set("views", __dirname + "/db/views");
+
 // Llamado a rutas
 app.use('/index', indexRouter);
 app.use('/api/datos', dataRouter);

@@ -3,7 +3,7 @@
     "username": "moodleuser",
     "password": "moodle2023",
     "database": "productos",
-    "host": "ec2-18-234-140-147.compute-1.amazonaws.com",
+    "host": "ec2-107-23-55-145.compute-1.amazonaws.com",
     "dialect": "mariadb",
     "allowPublicKeyRetrieval": true
   }
