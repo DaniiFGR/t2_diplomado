@@ -30,6 +30,33 @@ module.exports = sequelize => {
       field: "nombre",
       autoIncrement: false
     },
+    cantidad: {
+      type: DataTypes.BIGINT,
+      allowNull: false,
+      defaultValue: null,
+      comment: null,
+      primaryKey: false,
+      field: "cantidad",
+      autoIncrement: false
+    },
+    precio: {
+      type: DataTypes.REAL,
+      allowNull: false,
+      defaultValue: null,
+      comment: null,
+      primaryKey: false,
+      field: "precio",
+      autoIncrement: false
+    },
+    subtotal: {
+      type: DataTypes.REAL,
+      allowNull: false,
+      defaultValue: null,
+      comment: null,
+      primaryKey: false,
+      field: "subtotal",
+      autoIncrement: false
+    },
     estado: {
       type: DataTypes.CHAR(200),
       allowNull: false,
@@ -41,7 +68,7 @@ module.exports = sequelize => {
     },
   };
   const options = {
-    tableName: "datos",
+    tableName: "medicamentos",
     comment: "",
     indexes: [],
     timestamps: false,
